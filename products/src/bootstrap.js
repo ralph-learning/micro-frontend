@@ -1,6 +1,6 @@
 import faker from 'faker';
 
-const mount = (el) => {
+export function mount(el) {
   if(!el) {
     console.error('The element does not exist.');
     return;
@@ -23,6 +23,4 @@ if (process.env.NODE_ENV === 'development') {
     mount(el);
   }
 }
-
-export { mount };
 
